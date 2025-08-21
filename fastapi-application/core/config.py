@@ -57,7 +57,7 @@ class Settings(BaseSettings):
         case_sensitive=False,
         env_nested_delimiter="__",
         env_prefix="FASTAPI__",
-        env_file=".env",
+        env_file=(".env", ".env.template"),
     )
     run: RunConfig = RunConfig()
     api: ApiPrefix = ApiPrefix()
