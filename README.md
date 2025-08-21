@@ -35,6 +35,7 @@ docker compose up -d pg rabbitmq maildev backend
 3. Приложение будет доступно по адресу:
 
 Swagger UI: http://localhost:8000/docs
+
 MailDev: http://localhost:8080/#/
 
 4. Тесты
