@@ -54,5 +54,17 @@ services:
       options:
         max-size: "1m"
 
+  backend:
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    ports:
+      - "8000:8000"
+    depends_on:
+      pg:
+        condition: service_healthy
+    env_file:
+      - ./fastapi-application/.env.template
+
 volumes:
   rabbitmq-data:
