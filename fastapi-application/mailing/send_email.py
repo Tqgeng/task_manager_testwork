@@ -19,6 +19,6 @@ async def send_email(
         message,
         sender=admin_email,
         recipients=[recipient],
-        hostname="localhost",
+        hostname="maildev",
         port=1025,
     )
